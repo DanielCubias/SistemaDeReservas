@@ -1,0 +1,85 @@
+/* style.css - Login moderno en dark mode */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e0;
+}
+
+.login-wrapper {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #00bfff;
+}
+
+.login-subtitle {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #444;
+    color: #fff;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+button {
+    padding: 12px;
+    background: #00bfff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #009acc;
+}
