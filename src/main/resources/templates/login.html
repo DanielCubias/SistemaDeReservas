@@ -1,12 +1,11 @@
+<!-- src/main/resources/templates/login.html -->
+
 <!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso - Sistema de Reservas</title>
-    <link rel="stylesheet" th:href="@{/style.css}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-</head>
+    <title>Iniciar Sesión</title>
+ <link rel="stylesheet" th:href="@{/style.css}"></head>
 <body>
     <div class="login-wrapper">
         <div class="login-box">
@@ -14,11 +13,11 @@
             <p class="login-subtitle">Inicia sesión para continuar</p>
             <form th:action="@{/login}" method="post">
                 <label for="username">Usuario</label>
-                <input type="text" id="username" name="username" placeholder="Introduce tu usuario" required>
-
+                <input type="text" id="username" name="username" required>
+                
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
-
+                <input type="password" id="password" name="password" required>
+                
                 <button type="submit">Ingresar</button>
             </form>
         </div>
