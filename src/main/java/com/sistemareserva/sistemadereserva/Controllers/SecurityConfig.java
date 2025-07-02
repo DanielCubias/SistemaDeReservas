@@ -10,18 +10,20 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig {
 
+    // Spring utiliza este para construir el sistema de seguridad de mi app
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+
         http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/css/**", "/js/**", "/login").permitAll()
+                        .requestMatchers("/style.css/**", "/js/**", "/login").permitAll()
                         .anyRequest().authenticated())
                 .formLogin(form -> form
-                        .loginPage("/login") // Tu login personalizado
+                        .loginPage("/login") // muestra mi login personalizado
                         .defaultSuccessUrl("/index", true) // Redirige a index tras login exitoso
                         .permitAll())
                 .logout(logout -> logout
-                        .logoutSuccessUrl("/login?logout")
+                        .logoutSuccessUrl("/login?logout")// Tras cerrar sesión, redirige a login
                         .permitAll());
 
         return http.build();

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 public class IndexController {
 
-    @GetMapping("/index")
+    @GetMapping("/indexController")
     public String mostrarIndex(Model model) {
         model.addAttribute("title", "Inicio");
         model.addAttribute("contenidoFragment", "index :: contenido");
