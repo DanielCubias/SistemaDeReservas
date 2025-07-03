@@ -1,0 +1,89 @@
+ body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background-image: url('/img/HotelParaiso.png');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        position: relative;
+    }
+
+
+    /*overlay sirve para crear una caooa semitransparente que se superpone a la imagen original
+    para que en este caso me resalte el contenido que sera el header*/
+    header .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); /* oscurece la imagen */
+    z-index: 1;  
+    backdrop-filter: blur(2px)  /*Filro para desenfocar la imagen y que se vea mas las letras del header*/
+    }
+
+    header h1, header p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 8px #000, 0 0 10px #fff;
+    }
+
+    header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ffd700; /* Amarillo llamativo */
+    font-weight: bold;
+    letter-spacing: 2px;
+    }
+
+    header p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    }
+
+    nav {
+      background: #004080;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .btn {
+      background-color: #0073e6;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #005bb5;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
