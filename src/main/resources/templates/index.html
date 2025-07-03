@@ -1,9 +1,34 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
-<body>
-  <div th:fragment="contenidoIndex">
-    <h1>Página de Inicio</h1>
-    <p>Bienvenido al sistema de reservas</p>
-  </div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Paraíso - Sistema de Reservas</title>
+  <link rel="stylesheet" th:href="@{indexStyle.css}" />
+  
+</head>
+<body>  
+  <header>
+  <div class="overlay"></div>
+  <h1>HOTEL PARAÍSO</h1>
+</header>
+
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="/habitaciones">Habitaciones</a>
+    <a href="/reservas">Reservar</a>
+    <a href="/contacto">Contacto</a>
+    <a href="/login">Iniciar Sesión</a>
+  </nav>
+
+  <main>
+    <h2>Reserva tu habitación en pocos pasos</h2>
+    <p>Consulta disponibilidad, elige tu estancia ideal y confirma tu reserva fácilmente.</p>
+    <a href="/reservas"><button class="btn">Hacer una Reserva</button></a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hotel Paraíso. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
